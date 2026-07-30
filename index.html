@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rules - Soloraya Showdown 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- MOBILE TOPBAR -->
+  <div class="topbar">
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="topbar-title">
+      <span class="topbar-icon">⚔️</span>
+      Rules Soloraya Showdown 2026
+    </div>
+  </div>
+
+  <!-- OVERLAY (mobile) -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <div class="layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">⚔️</div>
+        <div>
+          <div class="sidebar-title">Rules Tournament Mobile Legends</div>
+          <div class="sidebar-sub">Soloraya Showdown 2026</div>
+        </div>
+      </div>
+
+      <div class="sidebar-tagline">"Rise of Champions"</div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group-label">Peraturan</div>
+
+        <button class="nav-item active" data-section="pendaftaran">
+          <span class="nav-icon">📋</span>
+          <span class="nav-label">Syarat Pendaftaran</span>
+          <span class="nav-arrow">›</span>
+        </button>
+
+        <button class="nav-item" data-section="umum">
+          <span class="nav-icon">⚔️</span>
+          <span class="nav-label">Peraturan Umum</span>
+          <span class="nav-arrow">›</span>
+        </button>
+
+        <button class="nav-item" data-section="pertandingan">
+          <span class="nav-icon">🏆</span>
+          <span class="nav-label">Pertandingan</span>
+          <span class="nav-arrow">›</span>
+        </button>
+
+        <button class="nav-item" data-section="final">
+          <span class="nav-icon">👑</span>
+          <span class="nav-label">Babak Final</span>
+          <span class="nav-arrow">›</span>
+        </button>
+
+        <div class="nav-group-label" style="margin-top:1.5rem">Sub Topik</div>
+
+        <button class="nav-sub" data-section="pertandingan" data-scroll="lobby">
+          <span class="nav-dot"></span> Peraturan Lobby
+        </button>
+        <button class="nav-sub" data-section="pertandingan" data-scroll="match">
+          <span class="nav-dot"></span> Aturan Match
+        </button>
+        <button class="nav-sub" data-section="pertandingan" data-scroll="pause">
+          <span class="nav-dot"></span> Tabel Pause
+        </button>
+        <button class="nav-sub" data-section="pertandingan" data-scroll="ss">
+          <span class="nav-dot"></span> Format SS
+        </button>
+        <button class="nav-sub" data-section="final" data-scroll="diff">
+          <span class="nav-dot"></span> Final vs Kualifikasi
+        </button>
+      </nav>
+
+      <div class="sidebar-info">
+        <div class="info-chip">💰 Rp 70.000 / Tim</div>
+        <div class="info-chip">👥 5+1 Pemain</div>
+        <div class="info-chip">🎮 BO3 / BO5</div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content" id="content">
+
+      <!-- ========================
+           SECTION: PENDAFTARAN
+      ========================= -->
+      <section class="section active" id="sec-pendaftaran">
+        <div class="section-header">
+          <h1>📋 Syarat Pendaftaran</h1>
+          <p>Pastikan kamu memenuhi semua syarat sebelum mendaftar</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon">🎓</div>
+            <h3>Status Peserta</h3>
+            <p>Pelajar SMA/SMK atau mahasiswa aktif. Wajib melampirkan Kartu Pelajar, KTM, atau Surat Keterangan Aktif.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">👥</div>
+            <h3>Komposisi Tim</h3>
+            <p>5 pemain inti + maksimal 1 pemain cadangan. Setiap pemain hanya boleh bergabung di 1 tim.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🏷️</div>
+            <h3>Nama Tim & Nickname</h3>
+            <p>Tidak mengandung unsur SARA, pornografi, atau ujaran kebencian. Pelanggaran berakibat diskualifikasi.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📅</div>
+            <h3>Technical Meeting</h3>
+            <p>Seluruh kapten tim wajib hadir di TM. Tidak hadir tanpa alasan dianggap menyetujui semua peraturan panitia.</p>
+          </div>
+          <div class="card card-gold">
+            <div class="card-icon">💳</div>
+            <h3>Biaya Pendaftaran</h3>
+            <div class="price-badge">Rp 70.000 / Tim</div>
+            <p>Transfer sesuai ketentuan panitia dan upload bukti transfer di form pendaftaran.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">📝</div>
+            <h3>Data yang Dibutuhkan</h3>
+            <ul class="rule-list">
+              <li>– Nama tim</li>
+              <li>– Nama kapten + nomor WhatsApp aktif</li>
+              <li>– Nickname MLBB semua pemain (5+1)</li>
+              <li>– ID dan Server MLBB</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-banner">
+          <span class="info-icon">ℹ️</span>
+          <span>Persyaratan usia: minimal 15 tahun — maksimal 25 tahun. Anggota tim tidak wajib berasal dari sekolah/kampus yang sama.</span>
+        </div>
+      </section>
+
+      <!-- ========================
+           SECTION: UMUM
+      ========================= -->
+      <section class="section" id="sec-umum">
+        <div class="section-header">
+          <h1>⚔️ Peraturan Umum</h1>
+          <p>Berlaku untuk seluruh peserta sepanjang turnamen</p>
+        </div>
+
+        <div class="rule-block">
+          <div class="rule-block-title">
+            <span>📱</span> Perangkat & Koneksi
+          </div>
+          <ul class="rule-list">
+            <li>– Peserta wajib menggunakan perangkat pribadi (HP)</li>
+            <li>– Wajib memiliki jaringan internet stabil selama match online</li>
+            <li>– Panitia tidak bertanggung jawab atas gangguan sinyal peserta</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <div class="rule-block-title">
+            <span>🚫</span> Fair Play & Etika
+          </div>
+          <ul class="rule-list">
+            <li>– Dilarang menggunakan cheat, script ilegal, atau aplikasi ketiga</li>
+            <li>– Dilarang toxic/chat menghina selama pertandingan — langsung diskualifikasi</li>
+            <li>– Tim wajib mengikuti arahan panitia</li>
+            <li>– Bersedia di-walkout jika melanggar aturan</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <div class="rule-block-title">
+            <span>🪪</span> Identitas & Usia Peserta
+          </div>
+          <ul class="rule-list">
+            <li>– Peserta adalah siswa SMA/SMK atau mahasiswa se-Solo Raya</li>
+            <li>– Wajib melampirkan KTM/KRS aktif, kartu pelajar aktif, atau KTP</li>
+            <li>– Usia minimal 15 tahun, maksimal 25 tahun</li>
+            <li>– Anggota dalam satu tim tidak wajib dari sekolah/kampus yang sama</li>
+          </ul>
+        </div>
+
+        <div class="alert alert-info">
+          ⚖️ Semua peserta dianggap menyetujui peraturan yang dibuat panitia. Keputusan panitia bersifat MUTLAK dan tidak dapat diganggu gugat.
+        </div>
+      </section>
+
+      <!-- ========================
+           SECTION: PERTANDINGAN
+      ========================= -->
+      <section class="section" id="sec-pertandingan">
+        <div class="section-header">
+          <h1>🏆 Peraturan Pertandingan</h1>
+          <p>Format dan aturan teknis selama match berlangsung</p>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-box">
+            <div class="stat-label">Mode</div>
+            <div class="stat-val">Custom Draft Pick</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Format</div>
+            <div class="stat-val">Best of 3</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Bracket</div>
+            <div class="stat-val">A & B</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Skin</div>
+            <div class="stat-val">Bebas</div>
+          </div>
+        </div>
+
+        <!-- LOBBY -->
+        <div class="sub-section" id="sub-lobby">
+          <h2>🚪 Peraturan Lobby</h2>
+          <div class="step-list">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-text">Kapten tim di bracket atas membuat lobby, mengundang kapten lawan, dan wasit panitia.</div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-text">Tim bracket atas mendapat FIRST PICK. Tim bracket bawah mendapat SECOND PICK.</div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-text">Batas keterlambatan masuk lobby maksimal 10 menit. Lewat dari itu dianggap WO.</div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-text">Pertandingan boleh dimulai lebih awal jika kedua pihak setuju.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MATCH -->
+        <div class="sub-section" id="sub-match">
+          <h2>📜 Aturan Saat Match</h2>
+
+          <div class="rule-block">
+            <div class="rule-block-title"><span>💬</span> Chat All</div>
+            <div class="alert alert-danger">
+              Chat all dilarang keras. Tim yang mengirim chat all — termasuk "well played", "gg", dll — langsung DISKUALIFIKASI per match. Tim lawan berhak langsung SURRENDER.
+            </div>
+            <p class="note-text">– Recall-recall dan emote masih diperbolehkan.</p>
+          </div>
+
+          <div class="rule-block">
+            <div class="rule-block-title"><span>🦸</span> Hero & Skin</div>
+            <ul class="rule-list">
+              <li>– Skin on/off — bebas menggunakan skin atau tidak</li>
+              <li>– Hero bebas, tidak ada larangan ban hero tertentu</li>
+            </ul>
+          </div>
+
+          <div class="rule-block">
+            <div class="rule-block-title"><span>🔄</span> Rematch & Bug</div>
+            <ul class="rule-list">
+              <li>– Rematch diperbolehkan jika terjadi BUG dari Moonton</li>
+              <li>– Wajib melampirkan screenshot bukti bug kepada admin</li>
+              <li>– Gangguan koneksi / ping tidak stabil adalah tanggung jawab pemain</li>
+            </ul>
+          </div>
+
+          <div class="rule-block">
+            <div class="rule-block-title"><span>🔍</span> Spektator</div>
+            <ul class="rule-list">
+              <li>– Saat babak kualifikasi, tidak boleh ada spektator dari pihak manapun</li>
+              <li>– Jika ada tim membawa spec, SS dan kirim bukti ke admin</li>
+              <li>– Babak 8 besar diawasi semua panitia sampai final</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PAUSE -->
+        <div class="sub-section" id="sub-pause">
+          <h2>⏸️ Aturan Pause Per Babak</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Babak</th>
+                  <th>Pause</th>
+                  <th>Durasi Maks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kualifikasi Online</td>
+                  <td>1x / match / tim</td>
+                  <td>3 menit</td>
+                </tr>
+                <tr>
+                  <td>8 Besar</td>
+                  <td>2x / match / tim</td>
+                  <td>3 menit</td>
+                </tr>
+                <tr>
+                  <td>4 Besar</td>
+                  <td>2x / match / tim</td>
+                  <td>5 menit</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- SS -->
+        <div class="sub-section" id="sub-ss">
+          <h2>📸 Format Screenshot Win</h2>
+          <div class="ss-flow">
+            <div class="ss-col">
+              <div class="ss-card">
+                <div class="ss-num">5 SS</div>
+                <div class="ss-desc">Screenshot awal game / base tim untuk seluruh 5 pemain — wajib</div>
+              </div>
+              <img src="5ss.png" alt="Contoh 5 SS" class="ss-img" />
+            </div>
+            <div class="ss-arrow">→</div>
+            <div class="ss-col">
+              <div class="ss-card">
+                <div class="ss-num">1 SS</div>
+                <div class="ss-desc">Screenshot hasil pertandingan</div>
+              </div>
+              <img src="1ss.png" alt="Contoh 1 SS" class="ss-img" />
+            </div>
+            <div class="ss-arrow">→</div>
+            <div class="ss-card ss-card-gold">
+              <div class="ss-num">= 6 SS</div>
+              <div class="ss-desc">Total dikirim ke admin</div>
+            </div>
+          </div>
+          <div class="info-banner" style="margin-top:1rem">
+            <span class="info-icon">📌</span>
+            <span>Format SS WO: 1 SS lobby + SS jam pertandingan + bukti kuat lainnya. Tanpa bukti kuat, pertandingan tetap dilanjutkan.</span>
+          </div>
+          <img src="sswo.png" alt="Contoh SS WO" class="ss-img ss-img-wo" style="margin-top:0.75rem" />
+        </div>
+
+      </section>
+
+      <!-- ========================
+           SECTION: FINAL
+      ========================= -->
+      <section class="section" id="sec-final">
+        <div class="section-header">
+          <h1>👑 Peraturan Final</h1>
+          <p>Babak puncak — aturan lebih ketat, gengsi lebih tinggi</p>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-box stat-box-gold">
+            <div class="stat-label">Format</div>
+            <div class="stat-val">Best of 5</div>
+          </div>
+          <div class="stat-box stat-box-gold">
+            <div class="stat-label">Mode</div>
+            <div class="stat-val">Custom Draft Pick</div>
+          </div>
+          <div class="stat-box stat-box-gold">
+            <div class="stat-label">Pause</div>
+            <div class="stat-val">2x · 2 menit</div>
+          </div>
+          <div class="stat-box stat-box-gold">
+            <div class="stat-label">Toleransi</div>
+            <div class="stat-val">10 menit</div>
+          </div>
+        </div>
+
+        <!-- DIFF -->
+        <div class="sub-section" id="sub-diff">
+          <h2>⚡ Perbedaan Final vs Kualifikasi</h2>
+          <div class="table-wrap">
+            <table class="diff-table">
+              <thead>
+                <tr>
+                  <th>Aspek</th>
+                  <th>Kualifikasi</th>
+                  <th>Final</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Format Match</td>
+                  <td class="muted">BO3</td>
+                  <td class="gold">BO5</td>
+                </tr>
+                <tr>
+                  <td>Pause per Match</td>
+                  <td class="muted">1–2x</td>
+                  <td class="gold">2x</td>
+                </tr>
+                <tr>
+                  <td>Durasi Pause</td>
+                  <td class="muted">3–5 menit</td>
+                  <td class="gold">2 menit</td>
+                </tr>
+                <tr>
+                  <td>Pengawasan</td>
+                  <td class="muted">1 Wasit</td>
+                  <td class="gold">Semua Panitia</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="rule-block">
+          <div class="rule-block-title"><span>🚪</span> Lobby & Waktu</div>
+          <ul class="rule-list">
+            <li>– Kapten tim di bracket atas membuat lobby, undang kapten lawan + wasit panitia</li>
+            <li>– Toleransi keterlambatan maks 10 menit, lewat itu dianggap WO</li>
+            <li>– Pertandingan bisa dimulai lebih cepat jika kedua tim setuju</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <div class="rule-block-title"><span>⏸️</span> Pause Final</div>
+          <ul class="rule-list">
+            <li>– Maksimal 2x pause per match per tim</li>
+            <li>– Durasi maks 2 menit per pause</li>
+            <li>– Pause hanya untuk gangguan teknis mendesak — sinyal drop atau perangkat bermasalah</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <div class="rule-block-title"><span>💬</span> Chat All — TETAP DILARANG</div>
+          <div class="alert alert-danger">
+            Chat all tetap dilarang di babak final — termasuk "well played", "gg", dsb. Pelanggaran berakibat diskualifikasi langsung oleh panitia.
+          </div>
+        </div>
+
+        <div class="rule-block">
+          <div class="rule-block-title"><span>📸</span> Screenshot Wajib</div>
+          <ul class="rule-list">
+            <li>– Setiap pemain wajib SS room sebelum pertandingan dimulai</li>
+            <li>– SS hasil akhir match dikirimkan ke admin sesegera mungkin setelah selesai</li>
+          </ul>
+        </div>
+
+        <div class="rule-block">
+          <div class="rule-block-title"><span>🔄</span> Rematch & Bug</div>
+          <ul class="rule-list">
+            <li>– Rematch diperbolehkan jika ada bug Moonton yang berpengaruh signifikan</li>
+            <li>– Wajib lampirkan screenshot bukti bug ke admin</li>
+          </ul>
+        </div>
+
+        <div class="final-warning">
+          <div class="fw-icon">⚠️</div>
+          <div>
+            <div class="fw-title">INGAT!</div>
+            <p>Semua pelanggaran akan berakibat diskualifikasi. Keputusan panitia bersifat MUTLAK dan tidak dapat diganggu gugat.</p>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
